@@ -1,6 +1,7 @@
 .container {
   position: relative;
   width: 50%;
+  display: flex;
 }
 
 .image {
@@ -36,4 +37,14 @@
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+/* first layer */
+.text1 {
+  z-index: 1;
+}
+
+/* second layer (on top) */
+.text2 {
+  z-index: 2;
+  color: lightpink; /* just to see the difference */
 }
